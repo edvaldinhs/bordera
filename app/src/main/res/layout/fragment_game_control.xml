@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center_horizontal"
+    tools:context=".GameControlFragment">
+
+    <TextView
+        android:id="@+id/text_game_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:text="Control Panel: Game X" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use these buttons to manually send the launch signal to the network API."
+        android:textAlignment="center"
+        android:layout_marginBottom="40dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_trigger_ping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. TRIGGER LAUNCH PING"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_end_ping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. STOP/END PING"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="#F44336"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/text_last_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Last Command: Waiting..."
+        android:textSize="16sp"
+        android:textStyle="italic"/>
+
+</LinearLayout>
